@@ -28,7 +28,7 @@
     <div class='gdshow'>
         <marquee height=200px align=left direction="up" onmouseover="stop()" onmouseout="start()" scrollamount="2">
             <?php
-            $fenyesql = " LIMIT 0,10";
+            $fenyesql = "";
             $querybtf = "SELECT `money`,`name`,`addtime` FROM `donor` WHERE `isvisble`='1' $fenyesql";
             $resultbtf = mysql_query($querybtf) or die(mysql_error());
             echo "<table width=100%>";
